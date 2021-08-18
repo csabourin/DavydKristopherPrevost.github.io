@@ -31,7 +31,7 @@
     Relation = document.wheelForm.radio8.value,
     ctx = document.getElementById('wheelratio');
     var data = {
-      labels: ["Contribution to society", "Family", "Fun and leisure", "Health and fitness", "Money / Finances", "Achievements / Career", "Environment", "Relationships / Friendships",],
+      labels: ["Apport à la société", "Famille", "Divertissement et loisirs", "Santé et condition physique", "Argent et finances", "Réalisations/ carrière", "Environnement (Environnement physique personnel et professionnel)", "Relations / Amitiés",],
       datasets: [{
         data: [Society, Family, Fun, Health, Money, Career, Environment, Relation],
         borderWidth: 3,
@@ -77,7 +77,7 @@
   <div class="container-fluid">
     <p>Cet outil simple et puissant utilisé en coaching, aidera à atteindre le bon équilibre travail-vie personnelle.</p>
     <ul>
-      <li>L'exercice de la roue de la vie est un outil simple et puissant utilisé en coaching. Il permet d'atteindre l'équilibre travail-vie personnelle, tout en augmentant le degré de satisfaction personnelle global.</li>
+      <li>Après avoir terminé cette activité, vous aurez un aperçu des domaines de votre vie qui sont soit en équilibre, soit en déséquilibre. La conversation avec des pairs vous aidera à identifier des actions pour mettre en œuvre les changements que vous souhaitez apporter.</li>
       <li>En 30 minutes, vous aurez un aperçu des domaines de votre vie qui sont actuellement équilibrés et un plan d'action pour apporter les changements que vous souhaitez faire. </li>
       <li>Envisagez d'effectuer cet exercice périodiquement pour en tirer pleinement parti.</li>
     </ul>
@@ -101,7 +101,7 @@
       <form name="wheelForm" method="post">
         <div class="row">
           <div class="form1 society col-lg-6">
-            <legend>Contribution à la société</legend>
+            <legend>Apport à la société</legend>
             <fieldset>
               <label><input type="radio" id="radio11" name="radio1" value="1"><span>1</span></label>
               <label><input type="radio" id="radio12" name="radio1" value="2"><span>2</span></label>
@@ -131,7 +131,7 @@
             </fieldset>
           </div>
           <div class="form1 fun col-lg-6">
-            <legend>Amusement et loisirs</legend>
+            <legend>Divertissement et loisirs</legend>
             <fieldset>
               <label><input type="radio" id="radio31" name="radio3" value="1"><span>1</span></label>
               <label><input type="radio" id="radio32" name="radio3" value="2"><span>2</span></label>
@@ -146,7 +146,7 @@
             </fieldset>
           </div>
           <div class="form1 health col-lg-6">
-            <legend>Santé et la forme</legend>
+            <legend>Santé et condition physique</legend>
             <fieldset>
               <label><input type="radio" id="radio41" name="radio4" value="1"><span>1</span></label>
               <label><input type="radio" id="radio42" name="radio4" value="2"><span>2</span></label>
@@ -161,7 +161,7 @@
             </fieldset>
           </div>
           <div class="form1 money col-lg-6">
-            <legend>Argent / Finances</legend>
+            <legend>Argent et finances</legend>
             <fieldset>
               <label><input type="radio" id="radio51" name="radio5" value="1"><span>1</span></label>
               <label><input type="radio" id="radio52" name="radio5" value="2"><span>2</span></label>
@@ -176,7 +176,7 @@
             </fieldset>
           </div>
           <div class="form1 career col-lg-6">
-            <legend>Réalisations / Carrière</legend>
+            <legend>Réalisations/ carrière</legend>
             <fieldset>
               <label><input type="radio" id="radio61" name="radio6" value="1"><span>1</span></label>
               <label><input type="radio" id="radio62" name="radio6" value="2"><span>2</span></label>
@@ -191,7 +191,7 @@
             </fieldset>
           </div>
           <div class="form1 environment col-lg-6">
-            <legend>Environnement</legend>
+            <legend>Environnement (Environnement physique personnel et professionnel)</legend>
             <p style="text-align:center;">Personal and professional physical environment</p>
             <fieldset>
               <label><input type="radio" id="radio71" name="radio7" value="1"><span>1</span></label>
@@ -224,7 +224,7 @@
         </div>
       </div>
       <div class="col-lg-12">
-        <button type="button" onclick="wheelGraph();scrollingChart();reflexionText();">Create your wheel</button>
+        <button type="button" onclick="wheelGraph();scrollingChart();reflexionText();">Créer votre roue</button>
       </div>
     </form>
 
@@ -266,19 +266,19 @@
         </div>
         <div class="row">
           <div class="questionsForm col-lg-12">
-            <p>Après avoir réfléchi à votre roue de la vie, pensez à un objectif SMART que vous présenterez à l'étape 2 de la conversation de coaching par les pairs. (SMART : Spécifique, Mesurable, Atteignable, Pertinent, Temporel).</p>
+            <p>Après avoir réfléchi à votre roue de la vie, pensez à un objectif SMART que vous présenterez à l'étape 2 de la conversation avec des de coaching par les pairs. (SMART : Spécifique, Mesurable, Atteignable, Pertinent, Temporel).</p>
             <textarea style="width:1000px;height:200px;"></textarea>
           </div>
         </div>
       </div>
     </div>
     <div class="exercise">
-      <h3>Pour sauvergarder votre roue de la vie pour des usages futurs :</h3>
+      <h3>Pour enregistrer votre roue de la vie pour usage futur :</h3>
       <ul>
         <li>Maintenez la touche Control (Ctrl) et la touche P en même temps.</li>
-        <li>Dans la nouvelle page qui s'est ouverte, cliquez sur destination et changez la destination pour Enregistrer en PDF</li>
-        <li>En option, vous pouvez décider quelles pages vous souhaitez conserver en cliquant sur le menu déroulant Pages et en cliquant sur personnaliser</li>
-        <li>Une fois que vous avez cliqué sur l'option Enregistrer au format PDF, accédez au bouton Imprimer et choisissez l'emplacement où vous souhaitez l'enregistrer sur votre ordinateur.</li>
+        <li>Dans la nouvelle page qui s'est ouverte, cliquez sur « Destination » et changez la destination pour enregistrer en PDF.</li>
+        <li>Vous pouvez décider quelles pages vous souhaitez conserver en cliquant sur le menu déroulant « Pages » et en cliquant sur « Personnaliser ». </li>
+        <li>Une fois que vous avez cliqué sur l'option « Enregistrer » en format PDF, choisissez l'emplacement où vous souhaitez l’enregistrer sur votre ordinateur.</li>
       </ul>
     </div>
   </div>
